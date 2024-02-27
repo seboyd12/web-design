@@ -1,0 +1,154 @@
+/* Global Styles */
+img{
+    display: block;
+margin: 0 auto;
+width: 100%;
+}
+
+body{
+    background-color:burlywood;
+}
+
+#container {
+    background-color:ivory;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+        font-family: "Kalam", cursive;
+        font-weight: 700;
+        font-style: normal;
+}
+
+a {
+    color:black;
+}
+
+a:hover{
+color:chocolate;
+text-decoration: none;
+}
+
+/* Mobile Styles */
+nav {
+background-color:peru;
+padding: 10px;
+}
+
+nav ul{
+list-style-type :none;
+padding: 0;
+}
+ 
+nav li {
+    display: block;
+}
+
+nav li a {
+display: block;
+height: 40px;
+line-height: 40px;
+color:chocolate;
+background-color:tan;
+text-align: center;
+margin: 5px 0;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+}
+
+nav li a:hover {
+    background-color:orange ;
+}
+
+header h1 {
+    font: size 35px ;
+    color: darkslategray;
+
+}
+
+main {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#lower{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.col {
+    border: 2px solid black;
+    margin: 10px;
+    padding : 10px;
+}
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.button {
+    margin: 10px auto;
+    text-align: center;
+    background-color: tomato;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button:hover{
+    color: black
+}
+
+/* Tablet Styles */
+
+@media(min-width:786px) {
+   nav{
+text-align: center;
+   }
+   
+    nav li {
+        display: inline-block;
+    }
+    nav li a {
+        width: 200px;
+    }
+
+    main img {
+        width: 50%
+    }
+    #lower{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .col img {
+        width: 75%;
+    }
+
+} 
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+   #container{
+width: 65%;
+margin: 20px auto;
+   }
+   
+    #lower{
+        display:flex;
+    }
+
+    .col {
+        width: 33.33%;
+    }
+}
